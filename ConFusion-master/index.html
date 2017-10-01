@@ -3,155 +3,163 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <meta charset="uX-8">
-    <meta http-equiv="X-UA-Compa]ble" content="IE=edge">
-    <meta name="viewport" content="width=device-width,ini]al-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta charset="uX-8">
+  <meta http-equiv="X-UA-Compa]ble" content="IE=edge">
+  <meta name="viewport" content="width=device-width,ini]al-scale=1">
 
 
-    <title>IncludedU</title>
-    <!-- Bootstrap -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/mystyles.css" rel="stylesheet">
-    <link href="css/bootstrap-social.css" rel="stylesheet">
+  <title>IncludedU</title>
+  <!-- Bootstrap -->
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/mystyles.css" rel="stylesheet">
+  <link href="css/bootstrap-social.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
  <![endif]-->
 </head>
 
 <body>
-   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-                <a class="navbar-brand" href="#"><img src="img/logo.png" height=30 width=41></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"
-                       aria-hidden="true"></span> Home</a></li>
-                    <li><a href="aboutus.html">
-                      <span class="glyphicon glyphicon-info-sign"
-                     aria-hidden="true"></span>About IncludedU</a></li>
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                       role="button" aria-haspopup="true" aria-expanded="false">
-                     <span class="glyphicon glyphicon-list-alt"
-                        aria-hidden="true">Awareness<span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                          <li><a href="#">Overcoming Unconscious Bias</a></li>
-                          <li><a href="#">Mentorship</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="contactus.html"><i class="fa fa-envelope-0"></i>Make A Difference</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                  <li><a onclick="loginToggle()">
-                  <span class="glyphicon glyphicon-log-in"></span> Login</a>
-                    </li>
-                </ul>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo.png" height=30 width=41>
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"
+                       aria-hidden="true"></span> Home</a>
+          </li>
+          <li>
+            <a href="aboutus.html">
+              <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>About IncludedU</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <span class="glyphicon glyphicon-list-alt" aria-hidden="true">Awareness<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Overcoming Unconscious Bias</a>
+              </li>
+              <li><a href="#">Mentorship</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contactus.html"><i class="fa fa-envelope-0"></i>Make A Difference</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a onclick="loginToggle()">
+              <span class="glyphicon glyphicon-log-in"></span> Login</a>
+          </li>
+        </ul>
 
-            </div>
-        </div>
-    </nav>
-
-    <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Login </h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-inline" role="signin">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="email">
-                            <input type="password" class="form-control" placeholder="password">
-
-                        </div>
-                        <input type="checkbox" value="remember-me"> Remember me
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </nav>
 
-    <div id="reserveModal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Which school do you go to?</h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <div class="col-sm-12" align="center">
+  <div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login </h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-inline" role="signin">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="email">
+              <input type="password" class="form-control" placeholder="password">
 
-                                <select class="selectpicker form-control" multiple title="Which School do you go to">
-                        <option>University of California, Berkeley</option>
-                        <option>UC San Francisco</option>
-                        <option>University of California, Davis</option>
-                        <option>San Francisco State University</option>
-                        <option>San Jose State University</option>
-                        <option>University of California, Irvine</option>
-                      </select>
+            </div>
+            <input type="checkbox" value="remember-me"> Remember me
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                            </div>
-                        </div>
+  <div id="reserveModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">Which school do you go to?</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <div class="col-sm-12" align="center">
 
-                        <div class="form-group">
-                            <label for="section" class="col-xs-12 col-sm-2 control-label"> Fields</label>
+                <select class="selectpicker form-control" multiple title="Which School do you go to">
+                  <option>University of California, Berkeley</option>
+                  <option>UC San Francisco</option>
+                  <option>University of California, Davis</option>
+                  <option>San Francisco State University</option>
+                  <option>San Jose State University</option>
+                  <option>University of California, Irvine</option>
+                </select>
 
-                            <div class="btn-group col-sm-10" data-toggle="buttons">
-                                <label class="btn btn-success active">
-                                    <input type="checkbox" autocomplete="off" checked> Engineering
-                                    </label>
-                                <label class="btn btn-danger">
-                                    <input type="checkbox" autocomplete="off"> Science
-                                    </label>
-                            </div>
-                        </div>
+              </div>
+            </div>
 
-                        <div class="form-group">
-                            <label for="date" class="col-xs-12 col-sm-2 control-label"> Year </label>
-                            <div class="col-xs-3 ">
-                                <div class="input-group" id="date">
-                                    <input type="text" class="form-control" placeholder="Year" style="border-right-style:none;" />
-                                    <span class="input-group-addon" style="background:#fff;">
+            <div class="form-group">
+              <label for="section" class="col-xs-12 col-sm-2 control-label"> Fields</label>
+
+              <div class="btn-group col-sm-10" data-toggle="buttons">
+                <label class="btn btn-success active">
+                  <input type="checkbox" autocomplete="off" checked> Engineering
+                </label>
+                <label class="btn btn-danger">
+                  <input type="checkbox" autocomplete="off"> Science
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="date" class="col-xs-12 col-sm-2 control-label"> Year </label>
+              <div class="col-xs-3 ">
+                <div class="input-group" id="date">
+                  <input type="text" class="form-control" placeholder="Year" style="border-right-style:none;" />
+                  <span class="input-group-addon" style="background:#fff;">
                                  <span class="glyphicon-calendar glyphicon" style="padding-right: 10px;"></span>
-                                    </span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-primary">Go</button>
-
-                            </div>
-                        </div>
-                    </form>
-
+                  </span>
                 </div>
-                <div class="modal-footer">
-                    <div class="alert alert-warning alert-dismissible" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <strong>Don't see your school here?</strong> please <strong><a href="tel:+85212345678" style="color:#000;text-decoration:none;">add it.
+              </div>
+
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">Go</button>
+
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Don't see your school here?</strong> please <strong><a href="tel:+85212345678" style="color:#000;text-decoration:none;">add it.
          </div>
       </div>
     </div><!-- /.modal-content -->
@@ -255,10 +263,10 @@
                                      </a>
                                      <div class="btn-group" id="carouselButtons">
                                                      <button class="btn btn-danger btn-xs" id="carousel-pause">
-                                                 	    <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                                                      <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
                                                      </button>
                                                      <button class="btn btn-danger btn-xs" id="carousel-play">
-                                                 	    <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                                                      <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
                                                      </button>
                                   </div>
 
@@ -361,7 +369,7 @@
             <i class="fa fa-fax"></i>: +852 8765 4321<br>
             <i class="fa fa-envelope"></i>:
                                <a href="mailto:info@theexpatwoman.com">info@theexpatwoman.com</a>
-		           </address>
+               </address>
                 </div>
                 <div class="col-xs-12 col-sm-4">
                   <div class="nav navbar-nav" style="padding: 40px 10px;">
