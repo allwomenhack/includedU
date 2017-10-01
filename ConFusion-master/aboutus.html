@@ -1,24 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head
          content must come *after* these tags -->
-    <title>IncludedU</title>
-        <!-- Bootstrap -->
-        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-           <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-           <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-            <link href="css/mystyles.css" rel="stylesheet">
-            <link href="css/bootstrap-social.css" rel="stylesheet">
+  <title>IncludedU</title>
+  <!-- Bootstrap -->
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/mystyles.css" rel="stylesheet">
+  <link href="css/bootstrap-social.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -26,361 +25,323 @@
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="200">
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img src="img/logo.png" height=30 width=41></a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                  <li><a href="index.html"><span class="glyphicon glyphicon-home"
-                       aria-hidden="true"></span> Home</a></li>
-                  <li class="active"><a href="aboutus.html">
-                      <span class="glyphicon glyphicon-info-sign"
-                       aria-hidden="true"></span> About</a></li>
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                       role="button" aria-haspopup="true" aria-expanded="false">
-                       <span class="glyphicon glyphicon-list-alt"
-                        aria-hidden="true"> Menu <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                          <li><a href="#">Appetizers</a></li>
-                          <li><a href="#">Main Courses</a></li>
-                          <li><a href="#">Desserts</a></li>
-                          <li><a href="#">Drinks</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li class="dropdown-header">Specials</li>
-                          <li><a href="#">Lunch Buffet</a></li>
-                          <li><a href="#">Weekend Brunch</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="contactus.html"><i class="fa fa-envelope-0"></i> Contact</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                  <li><a data-toggle="modal" data-target="#loginModal">
-                  <span class="glyphicon glyphicon-log-in"></span> Login</a>
-                  </li>
-              </ul>
-
-          </div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo.png" height=30 width=41>
+        </a>
       </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"
+                       aria-hidden="true"></span> Home</a>
+          </li>
+          <li>
+            <a href="aboutus.html">
+              <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>About IncludedU</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <span class="glyphicon glyphicon-list-alt" aria-hidden="true">Awareness<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Overcoming Unconscious Bias</a>
+              </li>
+              <li><a href="#">Mentorship</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contactus.html"><i class="fa fa-envelope-0"></i>Make A Difference</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a onclick="loginToggle()">
+              <span class="glyphicon glyphicon-log-in"></span> Login</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
   </nav>
 
   <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Login </h4>
-            </div>
-            <div class="modal-body">
-                <form class="form-inline" role="signin">
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="email">
-                          <input type="password" class="form-control" placeholder="password">
-
-                        </div>
-                          <input type="checkbox" value="remember-me"> Remember me
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
-                      </form>
-          </div>
-      </div>
-      </div>
-  </div>
-
-    <header class="jumbotron">
-
-        <!-- Main component for a primary marketing message or call to action -->
-
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-xs-12 col-sm-8">
-                    <h1>Ristorante con Fusion</h1>
-                    <p style="padding:40px;"></p>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                </div>
-                <div class="col-xs-12 col-sm-2">
-                    <p style="padding:20px;"></p>
-                    <img src="img/logo.png" class="img-responsive">
-                </div>
-                <div class="col-xs-12 col-sm-2">
-                  <p style="padding:40px;"></p>
-                  <a type="button" class="btn btn-warning btn-block"
-               data-toggle="tooltip" title="Or Call us at +852 12345678"
-                data-placement="bottom" href="index.html#reservation">Reserve a table</a>
-
-                </div>
-            </div>
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login </h4>
         </div>
-    </header>
-
-    <div class="container">
-      <div class="row">
-       <div class="col-xs-12 col-sm-10">
-						<div class="row">
-							<div class="col-xs-12">
-								<ul class="breadcrumb">
-								  <li><a href="index.html">Home</a></li>
-								  <li class="active">About Us</li>
-								</ul>
-							</div>
-							<div class="col-xs-12">
-							   <h3>About Us</h3>
-							   <hr>
-							</div>
-						</div>
-
-
-
-			<div id="history" class="row row-content">
-						<div class="col-xs-12 col-sm-6 col-lg-8">
-									<h2>Our History</h2>
-									<p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
-									<p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
-									<div class="well">
-										<blockquote>
-											<p>You better cut the pizza in four pieces because
-												I'm not hungry enough to eat six.</p>
-											<footer>Yogi Berra,
-											  <cite>The Wit and Wisdom of Yogi Berra,
-												P. Pepe, Diversion Books, 2014</cite>
-											</footer>
-										</blockquote>
-									</div>
-
-						</div>
-
-
-						<div class="col-xs-12 col-sm-6 col-lg-4">
-							<div class="panel panel-primary">
-									<div class="panel-heading">
-										<h3 class="panel-title">Facts At a Glance</h3>
-									</div>
-									<div class="panel-body">
-										  <dl class="dl-horizontal">
-											  <dt>Started</dt>
-											  <dd>3 Feb. 2013</dd>
-											  <dt>Major Stake Holder</dt>
-											  <dd>HK Fine Foods Inc.</dd>
-											  <dt>Last Year's Turnover</dt>
-											  <dd>$1,250,375</dd>
-											  <dt>Employees</dt>
-											  <dd>40</dd>
-										 </dl>
-									</div>
-							</div>
-						</div>
-			</div>
-
-
-
-<div id="corporate" class="row row-content">
-            <div class="col-xs-12">
-
-															<h2>Corporate Leadership</h2>
-
-															<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-																<div class="panel panel-default">
-																	<div class="panel-heading" role="tab" id="headingPeter">
-																		<h3 class="panel-title">
-																			<a role="button" data-toggle="collapse" data-parent="#accordion" href="#peter" aria-expanded="true" aria-controls="peter">
-																				Peter Pan <small>Chief Epicurious Officer</small></a>
-																		</h3>
-																	</div>
-																	<div role="tabpanel" class="panel-collapse collapse in" id="peter"    aria-labelledby="headingPeter">
-																		<div class="panel-body">
-																			  <p>Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
-																		  </div>
-																	</div>
-																  </div>
-
-																			<div class="panel panel-default">
-																				<div class="panel-heading" role="tab" id="headingDanny">
-																					<h3 class="panel-title">
-																						<a class="collapsed" role="button" data-toggle="collapse"
-																							 data-parent="#accordion" href="#danny"
-																							 aria-expanded="false" aria-controls="danny">
-																							Dhanasekaran Witherspoon <small>Chief Food Officer</small></a>
-																					</h3>
-																				</div>
-																				<div role="tabpanel" class="panel-collapse collapse"
-																					 id="danny"    aria-labelledby="headingDanny">
-																					<div class="panel-body">
-																				  <p>Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em></p>
-																				</div>
-																				</div>
-																		  </div>
-
-																<div class="panel panel-default">
-																	<div class="panel-heading" role="tab" id="headingAgumbe">
-																		<h3 class="panel-title">
-																			<a class="collapsed" role="button" data-toggle="collapse"
-																				 data-parent="#accordion" href="#agumbe"
-																				 aria-expanded="false" aria-controls="agumbe">
-																				Agumbe Tang <small>Chief Taste Officer</small></a>
-																		</h3>
-																	</div>
-																	<div role="tabpanel" class="panel-collapse collapse"
-																		 id="agumbe"    aria-labelledby="headingAgumbe">
-																		<div class="panel-body">
-																	  <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
-																	</div>
-																						   </div>
-																					   </div>
-																					   <div class="panel panel-default">
-																						   <div class="panel-heading" role="tab" id="headingAlberto">
-																							   <h3 class="panel-title">
-																								   <a class="collapsed" role="button" data-toggle="collapse"
-																										data-parent="#accordion" href="#alberto"
-																										aria-expanded="false" aria-controls="alberto">
-																									   Alberto Somayya <small>Executive Chef</small></a>
-																							   </h3>
-																						   </div>
-																						   <div role="tabpanel" class="panel-collapse collapse"
-																								id="alberto"    aria-labelledby="headingAlberto">
-																							   <div class="panel-body">
-																								 <p> Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
-																							   </div>
-																					<div class="col-xs-12 col-sm-3">
-																					   <p style="padding:20px;"></p>
-																				   </div>
-																			  </div>
-																			</div>
-
-
-
-
-
-
-
-
-														 <div>
-															<p style="padding:20px;"></p>
-														</div>
-											</div>
-
-
-
-
-
-			<div id="facts" class="row row-content">
-            <div class="col-xs-12">
-                <h2>Facts &amp; Figures</h2>
-                <div class="table-responsive">
-               <table class="table table-striped">
-                   <tr>
-                       <td>&nbsp;</td>
-                       <th>2013</th>
-                       <th>2014</th>
-                       <th>2015</th>
-                   </tr>
-                   <tr>
-                       <th>Employees</th>
-                       <td>15</td>
-                       <td>30</td>
-                       <td>40</td>
-                   </tr>
-                   <tr>
-                       <th>Guests Served</th>
-                       <td>15000</td>
-                       <td>45000</td>
-                       <td>100,000</td>
-                   </tr>
-                   <tr>
-                       <th>Special Events</th>
-                       <td>3</td>
-                       <td>20</td>
-                       <td>45</td>
-                   </tr>
-                   <tr>
-                       <th>Annual Turnover</th>
-                       <td>$251,325</td>
-                       <td>$1,250,375</td>
-                       <td>~$3,000,000</td>
-                   </tr>
-               </table>
-               </div>
+        <div class="modal-body">
+          <form class="form-inline" role="signin">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="email">
+              <input type="password" class="form-control" placeholder="password">
 
             </div>
-             <div class="col-xs-12 col-sm-3">
-                <p style="padding:20px;"></p>
-            </div>
-
-
-       </div>
-
-       </div>
-
+            <input type="checkbox" value="remember-me"> Remember me
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 
-    <nav class="hidden-xs col-sm-2" id="myScrollspy">
-          <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
-              <li><a href="#history">Our History</a></li>
-              <li><a href="#corporate">Corporate</a></li>
-              <li><a href="#facts">Facts</a></li>
-          </ul>
+  <header class="jumbotron">
+
+    <!-- Main component for a primary marketing message or call to action -->
+
+    <div class="container">
+      <div class="row row-header">
+        <div class="col-xs-12 col-sm-8">
+          <h1>IncludedU</h1>
+          <p style="padding:40px;"></p>
+          <p>We want to bring attention to the gender gap in STEM departments at universities and invoke positive change</p>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+          <p style="padding:20px;"></p>
+          <img src="img/logo.png" class="img-responsive">
+        </div>
+        <div class="col-xs-12 col-sm-2">
+          <p style="padding:40px;"></p>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="breadcrumb">
+              <li><a href="index.html">Home</a>
+              </li>
+              <li class="active">About Us</li>
+            </ul>
+          </div>
+          <div class="col-xs-12">
+            <h3>About Us</h3>
+            <hr>
+          </div>
+        </div>
+        <div id="history" class="row row-content">
+          <div class="col-xs-12 col-sm-6 col-lg-8">
+            <h2>Our Story</h2>
+            <br/>
+            <p>Men dominate most computer science classes, and sometimes create a negative learning environment for the women in the class. Most people believe that women are not suited to be in the computer science field. However, this assumption is wrong and sexist. Women have just as much of an equal right as men do. There should be no difference in treatment.</p>
+            <p>Our goal is to provide the statistical data about gender diversity in computer science department and classrooms at various universities. We also want to provide a safe environment for women to be able to voice their opinions about the computer science departments at their university. Women can also rate their computer science department so other college students or high school students can determine if the university has diverse computer science department.</p>
+            <div class="well">
+              <blockquote>
+                <p>Just because you don't fit the classic mold doesn't mean you can't be a leader</p>
+                <footer>Jess Lee,
+                  <cite>co-founder and CEO of Polyvore</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+
+
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">IncludedU At a Glance</h3>
+              </div>
+              <div class="panel-body">
+                <dl class="dl-horizontal">
+                  <dt>Started</dt>
+                  <dd>30 September 2013</dd>
+                  <dt>Event</dt>
+                  <dd>All-Women Hackathon</dd>
+                  <dt>Partner Universities</dt>
+                  <dd>50</dd>
+                  <dt>Members</dt>
+                  <dd>5 and counting</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div id="corporate" class="row row-content">
+          <div class="col-xs-12">
+
+            <h2>Inspiration</h2>
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingPeter">
+                  <h3 class="panel-title">
+                                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#peter" aria-expanded="true" aria-controls="peter">
+                                        Ellen Pao <small>Investment Partner, Chief Diversity and Inclusion Officer, Co-Founder and CEO of Project Include</small></a>
+                                    </h3>
+                </div>
+                <div role="tabpanel" class="panel-collapse collapse in" id="peter" aria-labelledby="headingPeter">
+                  <div class="panel-body">
+                    <p>Ellen Pao was born to immigrant chinese parents she grew up in new jersey. Pao received a degree in electrical engineering from Princeton in 1991, a law degree from Harvard in 1994, and a MBA from Harvard in 1998. She worked at several companies in Silicon Valley, in 2005 pao worked for Kleiner Perkins as a chief of staff for co-found John Doerr. However in 2012 pao filed a gender discrimination lawsuit against er employer because, after filing the lawsuit she was fired without warning and while Kleiner Perkins said she was given a month to accept and a paid five month transition. No such thing happened and Pao won the lawsuit. Ever since she has been an advocate for having equal gender right in work environments, especially in the tech industry. She created Project Include with five other women in order to develop better advise for human resources that involve a series of meetings with clients and publishes anonymized progress reports under a Creative Commons license, for startup tech companies.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingDanny">
+                  <h3 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                               data-parent="#accordion" href="#danny"
+                                               aria-expanded="false" aria-controls="danny">
+                                              Susan Wojcicki<small>one of the most powerful women in technology as the CEO of Youtube and also co founder of 23andMe</small></a>
+                                          </h3>
+                </div>
+                <div role="tabpanel" class="panel-collapse collapse" id="danny" aria-labelledby="headingDanny">
+                  <div class="panel-body">
+                    <p>Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingAgumbe">
+                  <h3 class="panel-title">
+                                      <a class="collapsed" role="button" data-toggle="collapse"
+                                         data-parent="#accordion" href="#agumbe"
+                                         aria-expanded="false" aria-controls="agumbe">
+                                        Alaina Percival <small>CEO, Board Chair, and grassroot leader of Women Who Code</small></a>
+                                    </h3>
+                </div>
+                <div role="tabpanel" class="panel-collapse collapse" id="agumbe" aria-labelledby="headingAgumbe">
+                  <div class="panel-body">
+                    <p>CEO, Board Chair, and grassroot leader of Women Who Code, a global non-profit dedicated to inspiring women to excel in technology careers. She graduated from Georgia State University</em>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingAlberto">
+                  <h3 class="panel-title">
+                                                   <a class="collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#alberto"
+                                                    aria-expanded="false" aria-controls="alberto">
+                                                     Marissa Mayer<small>Former CEO of Yahoo</small></a>
+                                                 </h3>
+                </div>
+                <div role="tabpanel" class="panel-collapse collapse" id="alberto" aria-labelledby="headingAlberto">
+                  <div class="panel-body">
+                    <p> Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <p style="padding:20px;"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p style="padding:20px;"></p>
+              </div>
+            </div>
+
+
+
+
+
+            <div id="facts" class="row row-content">
+              <div class="col-xs-12">
+                <h2>Facts &amp; Figures</h2>
+                <img class="img-responsive" src="img/gender_data.png" alt="Uthappizza">
+
+              </div>
+              <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <nav class="hidden-xs col-sm-2" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
+          <li><a href="#history">Our History</a>
+          </li>
+          <li><a href="#corporate">Inspiration</a>
+          </li>
+          <li><a href="#facts">Facts</a>
+          </li>
+        </ul>
       </nav>
-</div>
+    </div>
 
 
 
 
     <footer class="row-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a>
+              </li>
+              <li><a href="#">About</a>
+              </li>
+              <li><a href="#">Awareness</a>
+              </li>
+              <li><a href="#">Make A Difference</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-sm-5">
+            <h5>Our Address</h5>
+            <address>
                         1 Hallide Plaza San Francisco, CA 94102
-                        
-                      
-		              <i class="fa fa-phone"></i>: +852 1234 5678<br>
-		              <i class="fa fa-fax"></i>: +852 8765 4321<br>
-		              <i class="fa fa-envelope"></i>:
+
+
+                  <i class="fa fa-phone"></i>: +852 1234 5678<br>
+                  <i class="fa fa-fax"></i>: +852 8765 4321<br>
+                  <i class="fa fa-envelope"></i>:
                         <a href="mailto:confusion@food.net">info@theexpatwoman.com</a>
-		           </address>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="nav navbar-nav" style="padding: 40px 10px;">
-                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <p style="padding:10px;"></p>
-                    <p align=center>© Copyright 2017 IncludedU</p>
-                </div>
+               </address>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="nav navbar-nav" style="padding: 40px 10px;">
+              <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+              <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+              <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+              <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+              <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+              <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
             </div>
+          </div>
+          <div class="col-xs-12">
+            <p style="padding:10px;"></p>
+            <p align=center>© Copyright 2017 IncludedU</p>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-   <!-- Include all compiled plugins (below), or include individual files as needed -->
-   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-       $(document).ready(function(){
-       $('[data-toggle="tooltip"]').tooltip();
-        });
-   </script>
-</body></html>
+      $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+</body>
+
+</html>
